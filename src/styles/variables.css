@@ -20,17 +20,15 @@
     /* Text Colors */
     --color-text-primary: #1e1f24;
     --color-text-secondary: #62636c;
-    --color-text-alt: #00b7c1;
     --color-text-disabled: #80828d;
 
     /* Dark Mode */
-    --color-bg-dark: #1c1c1d;
-    --color-bg-alt-dark: #252728;
+    --color-bg-dark: #000000;
+    --color-bg-alt-dark: #1e2021;
     --color-form-dark: #222325;
     --color-text-primary-dark: #eeeef0;
     --color-text-secondary-dark: #b2b3bd;
-    --color-text-alt-dark: #00b7c1;
-    --color-text-disabled-dark: #eff0f3;
+    --color-text-disabled-dark: #a2a4b0;
 
     /* Typography */
     --font-sans: "Inter", sans-serif;
@@ -97,9 +95,10 @@
   }
   /* Dark Variant */
   :root.dark {
+    /* UI Backgrounds */
     --color-bg: var(--color-bg-dark);
     --color-bg-alt: var(--color-bg-alt-dark);
-    --color-form: var(--color-text-disabled);
+    --color-form: var(--color-form-dark);
     --color-text-primary: var(--color-text-primary-dark);
     --color-text-secondary: var(--color-text-secondary-dark);
     --color-text-disabled: var(--color-text-disabled-dark);

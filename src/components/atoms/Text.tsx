@@ -3,7 +3,7 @@ interface Props {
   children?: React.ReactNode;
   size?: "sm" | "md" | "lg";
   center?: boolean;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "disabled";
   className?: string;
 }
 
@@ -21,7 +21,7 @@ export default function Text({
   };
   const variants = {
     primary: "ds-text-primary",
-    secondary: "ds-text-secondary",
+    disabled: "ds-text-disabled",
   };
 
   return (

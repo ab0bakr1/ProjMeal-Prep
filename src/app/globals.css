@@ -2,6 +2,8 @@
 
 @import "../styles/variables.css";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* -------------------------------------------------- */
 /* Base                                                */
 /* -------------------------------------------------- */
@@ -72,7 +74,7 @@
     color: var(--color-text-secondary);
   }
   .ds-text-alt {
-    color: var(--color-text-alt);
+    color: var(--color-primary);
   }
   .ds-text-disabled {
     color: var(--color-text-disabled);

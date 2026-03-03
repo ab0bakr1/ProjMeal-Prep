@@ -27,10 +27,6 @@
     display: block;
   }
 }
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
 
 /* -------------------------------------------------- */
 /* Design System Utilities                             */
@@ -181,5 +177,20 @@
   .ds-disabled {
     opacity: var(--opacity-disabled);
     pointer-events: none;
+  }
+}
+/* -------------------------------------------------- */
+/* Layout                                              */
+/* -------------------------------------------------- */
+.ds-container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 16px;
+  max-width: 1320px;
+}
+
+@media (min-width: 1024px) {
+  .ds-container {
+    width: 92%;
   }
 }

@@ -5,9 +5,20 @@ import Text from "../atoms/Text";
 export default function Heading() {
   return (
     <div className="">
-      <Title variant="black" size="md" className="gap-1 ds-font-bold" center={true}>
-        How It <span className="ds-text-alt  ">Work</span>
-      </Title>
+
+      <div className="flex items-center justify-center  gap-1">
+        <Title
+          variant="black"
+          size="md"
+          className=" ds-font-bold"
+          center={true}>
+          How It
+        </Title>
+        <Title variant="primary" size="md" className=" ds-font-bold">
+          Work
+        </Title>
+      </div>
+
       <Text variant="secondary" size="md" center={true}>
         Get started in just 3 simple steps
       </Text>

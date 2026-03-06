@@ -15,7 +15,7 @@ import Heading from "@/components/molecules/Heading";
 export default function Page() {
   useReveal(".Reveal-Section");
   return (
-    <div>
+    <div >
       <PublicLayout>
         <Text variant="primary" size="md">
           this is text

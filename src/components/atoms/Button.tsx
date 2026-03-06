@@ -30,9 +30,9 @@ const Button = ({
 
   const variants = {
     primary:
-      "ds-bg-primary text-white capitalize focus:ring-blue-500 cursor-pointer hover:opacity-95",
+      "ds-bg-primary capitalize focus:ring-blue-500 cursor-pointer hover:opacity-95",
     secondary:
-      "ds-bg-secondary border-2 border-skill text-white capitalize hover:opacity-95 cursor-pointer",
+      "ds-bg-secondary text-balck capitalize hover:opacity-95 cursor-pointer",
   };
 
   const sizes = {

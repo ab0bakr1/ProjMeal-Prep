@@ -11,6 +11,7 @@ import Icon from "@/components/atoms/Icon";
 import PublicLayout from "@/components/layout/PublicLayout";
 import useReveal from "@/animations/Reveal";
 import Floating from "@/animations/floating";
+import Rectangle from "@/components/molecules/Rectangle";
 export default function Page() {
   useReveal(".Reveal-Section");
   return (
@@ -23,7 +24,6 @@ export default function Page() {
         <Title variant="black" size="sm">
           this is heading
         </Title>
-
         <ThemeToggle />
         <div className="grid grid-col-1 md:grid-cols-2 container lg:grid-cols-3 gap-8 Reveal-Section">
           {dataBox.map((box) => (

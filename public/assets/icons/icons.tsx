@@ -1,3 +1,3 @@
-import { Sun, Moon, Users, ListMinus } from "lucide-react";
+import { Sun, Moon, Users, ListMinus, ChevronRight   } from "lucide-react";
 
-export { Sun, Moon, Users, ListMinus };
+export { Sun, Moon, Users, ListMinus, ChevronRight  };

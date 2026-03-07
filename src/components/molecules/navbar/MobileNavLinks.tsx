@@ -1,3 +1,4 @@
+import { ThemeToggle } from "@/components/atoms/ThemeButton";
 import NavLink from "../../atoms/navbar/NavLink";
 import Button from "@/components/atoms/Button";
 
@@ -34,7 +35,15 @@ export default function MobileNavLinks({
         </li>
       ))}
 
-      <Button size="md">login</Button>
+      <div className="flex flex-col px-4 mt-4 gap-2">
+        <ThemeToggle />
+        <Button variant="secondary" size="md" isRounded={true}>
+          login
+        </Button>
+        <Button className="text-white" isRounded={true} size="md">
+          Sign Up
+        </Button>
+      </div>
     </ul>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 import Text from "@/components/atoms/Text";
 import Title from "@/components/atoms/Title";
-import { ThemeToggle } from "@/components/atoms/ThemeButton";
 import Box from "@/components/molecules/Box";
 import { dataBox } from "@/utils/data";
 import Images from "@/components/atoms/Images";
@@ -25,9 +24,17 @@ export default function Page() {
           this is heading
         </Title>
 
+
         <ThemeToggle />
         <Heading/>
       <Box/>
+
+        <div className="grid grid-col-1 md:grid-cols-2 container lg:grid-cols-3 gap-8 Reveal-Section">
+          {dataBox.map((box) => (
+            <Box key={box.id} title={box.title} text={box.text} />
+          ))}
+        </div>
+
         <Floating>
           <Images src={hero} alt="heroSection" width={400} height={400} />
         </Floating>

@@ -10,10 +10,11 @@ import Icon from "@/components/atoms/Icon";
 import PublicLayout from "@/components/layout/PublicLayout";
 import useReveal from "@/animations/Reveal";
 import Floating from "@/animations/floating";
+import Heading from "@/components/molecules/Heading";
 export default function Page() {
   useReveal(".Reveal-Section");
   return (
-    <div>
+    <div >
       <PublicLayout>
         <Text variant="primary" size="md">
           this is text
@@ -23,11 +24,17 @@ export default function Page() {
           this is heading
         </Title>
 
+
+        <ThemeToggle />
+        <Heading/>
+      <Box/>
+
         <div className="grid grid-col-1 md:grid-cols-2 container lg:grid-cols-3 gap-8 Reveal-Section">
           {dataBox.map((box) => (
             <Box key={box.id} title={box.title} text={box.text} />
           ))}
         </div>
+
         <Floating>
           <Images src={hero} alt="heroSection" width={400} height={400} />
         </Floating>

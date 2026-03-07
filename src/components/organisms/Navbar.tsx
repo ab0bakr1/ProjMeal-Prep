@@ -9,13 +9,14 @@ import DesktopNavLinks from "../molecules/navbar/DesktopNavLinks";
 import MobileNavHeader from "../molecules/navbar/MobileNavHeader";
 import MobileNavLinks from "../molecules/navbar/MobileNavLinks";
 import Button from "../atoms/Button";
+import { ThemeToggle } from "../atoms/ThemeButton";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const mainRoutes = Routes.filter((r) => r.id <= 3);
-  const dropdownRoutes = Routes.filter((r) => r.id > 3);
+  const mainRoutes = Routes.filter((r) => r.id <= 5);
+  const dropdownRoutes = Routes.filter((r) => r.id > 5);
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 50);
@@ -46,8 +47,14 @@ export default function Navbar() {
           closeNavbar={closeNavbar}
         />
 
-        <div className="hidden md:block ">
-          <Button size="md">login</Button>
+        <div className="md:flex items-center gap-2 hidden">
+          <ThemeToggle />
+          <Button variant="secondary" size="md" isRounded={true}>
+            login
+          </Button>
+          <Button className="text-white" isRounded={true} size="md">
+            Sign Up
+          </Button>
         </div>
         <div className="md:hidden">
           <NavIconButton onClick={() => setOpen(true)}>

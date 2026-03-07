@@ -1,3 +1,4 @@
+import { cn } from "@/lib/cn";
 import Link from "next/link";
 
 interface Props {
@@ -10,7 +11,8 @@ export default function NavLogo({ size = "sm" }: Props) {
       href="/"
       className={`text-light font-bold ${size === "lg" ? "text-4xl" : "text-2xl"}`}
     >
-      Logo
+      <span className="ds-text-primary">Survey</span>
+      Land
     </Link>
   );
 }

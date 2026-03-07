@@ -1,6 +1,6 @@
 import PublicLayout from "@/components/layout/PublicLayout";
 import React from "react";
 
-export default function Page() {
-  return <PublicLayout>FAQs</PublicLayout>;
+export default function page() {
+  return <PublicLayout>Contact US</PublicLayout>;
 }

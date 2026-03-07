@@ -1,4 +1,5 @@
 import NavLink from "@/components/atoms/navbar/NavLink";
+import { cn } from "@/lib/cn";
 
 export interface NavRoute {
   id: number;
@@ -16,7 +17,7 @@ export default function DesktopNavLinks({ mainRoutes }: DesktopNavLinksProps) {
   return (
     <ul className="text-light hidden items-center gap-6 text-base font-medium md:flex">
       {mainRoutes.map((item) => (
-        <li key={item.id}>
+        <li key={item.id} className={cn("ds-text-secondary")}>
           <NavLink to={item.path}>{item.key}</NavLink>
         </li>
       ))}

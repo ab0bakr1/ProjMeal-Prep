@@ -11,7 +11,7 @@ export default function NavLogo({ size = "sm" }: Props) {
       href="/"
       className={`text-light font-bold ${size === "lg" ? "text-4xl" : "text-2xl"}`}
     >
-      <span style={{ color: "var(--color-primary)" }}>Survey</span>
+      <span className="ds-text-primary">Survey</span>
       Land
     </Link>
   );

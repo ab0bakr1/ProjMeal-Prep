@@ -10,7 +10,9 @@ import Icon from "@/components/atoms/Icon";
 import PublicLayout from "@/components/layout/PublicLayout";
 import useReveal from "@/animations/Reveal";
 import Floating from "@/animations/floating";
+import Rectangle from "@/components/molecules/Rectangle";
 import Heading from "@/components/molecules/Heading";
+
 export default function Page() {
   useReveal(".Reveal-Section");
   return (
@@ -23,8 +25,6 @@ export default function Page() {
         <Title variant="black" size="sm">
           this is heading
         </Title>
-
-
         <ThemeToggle />
         <Heading/>
       <Box/>

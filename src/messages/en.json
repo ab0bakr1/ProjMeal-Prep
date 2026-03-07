@@ -14,5 +14,47 @@
         "text": "Get instant insights with clean charts and downloadable reports"
       }
     }
+  },
+  "FAQs": {
+    "title":"What can I do with SurveyLand ?",
+    "text":"SurveyLand enables you to create online forms, collect responses directly in your email, and create fillable PDF forms. You can put together all types of forms, including:",
+    "Do":{
+      "Do1": "Registration Forms",
+      "Do2": "Application Forms",
+      "Do3": "Contact Forms",
+      "Do4": "Request Forms",
+      "Do5": "Order Forms",
+      "Do6": "Feedback Forms",
+      "Do7": "Survey Templates",
+      "Do8": "Signup Forms",
+      "Do9": "Evaluation Forms",
+      "Do10": "Event Registration Forms",
+      "Do11": "Booking Forms",
+      "Do12": "Petition Forms",
+      "Do13": "Report Forms",
+      "Do14": "Reservation Forms",
+      "Do15": "Employment Forms",
+      "Do16": "Tracking Forms",
+      "Do17": "Membership Forms",
+      "Do18": "Upload Forms",
+      "Do19": "Quote Forms",
+      "Do20": "Appointment Forms",
+      "Do21": "Enrollment Forms",
+      "Do22": "Volunteer Forms",
+      "Do23": "Payment Forms",
+      "Do24": "Wedding Forms",
+      "Do25": "Calculation Forms",
+      "Do26": "Content Forms",
+      "Do27": "Lead Generation Forms",
+      "Do28": "Consent Forms",
+      "Do29": "Award Forms",
+      "Do30": "Subscription Forms",
+      "Do31": "Recommendation Forms",
+      "Do32": "Poll Templates",
+      "Do33": "Donation Forms",
+      "Do34": "RSVP Forms",
+      "Do35": "Sponsorship Forms",
+      "Do36": "Abstract Forms"
+    }
   }
 }

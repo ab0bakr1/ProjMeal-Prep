@@ -15,3 +15,21 @@ export const dataBox = [
     text: "HomePage.boxes.box3.text",
   },
 ];
+
+export const dataBoxes = [
+  {
+    id: 1,
+    title: "home.boxes.box1.title",
+    text: "home.boxes.box1.text",
+  },
+  {
+    id: 2,
+    title: "home.boxes.box2.title",
+    text: "home.boxes.box2.text",
+  },
+  {
+    id: 3,
+    title: "home.boxes.box3.title",
+    text: "home.boxes.box3.text",
+  },
+];

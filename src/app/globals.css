@@ -75,6 +75,9 @@
   .ds-text-disabled {
     color: var(--color-text-disabled);
   }
+  .ds-text-main {
+    color: var(--color-primary);
+  }
   /* ================= BORDERS ================= */
   .ds-border-sm {
     border-width: var(--border-width-sm);

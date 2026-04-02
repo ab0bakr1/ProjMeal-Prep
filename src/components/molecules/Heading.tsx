@@ -8,19 +8,19 @@ export default function Heading() {
 
       <div className="flex items-center justify-center  gap-1">
         <Title
-          variant="black"
-          size="md"
+          variant="disabled"
+          size="xl"
           className=" ds-font-bold"
           center={true}>
-          How It
+          Lorem, ipsum dolor.
         </Title>
-        <Title variant="primary" size="md" className=" ds-font-bold">
-          Work
+        <Title variant="disabled" size="xl" className=" ds-font-bold">
+          Lorem, ipsum.
         </Title>
       </div>
 
       <Text variant="secondary" size="md" center={true}>
-        Get started in just 3 simple steps
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi.
       </Text>
     </div>
   );

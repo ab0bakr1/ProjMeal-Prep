@@ -1,19 +1,43 @@
 @import "../styles/variables.css";
-
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* -------------------------------------------------- */
-/* Base                                                */
+/* Base - محدث للنظام الجديد                         */
 /* -------------------------------------------------- */
 @layer base {
   html {
-    font-family: var(--font-sans);
+    /* دعم RTL/LTR وخطوط عربية حديثة */
+    font-family: var(--font-arabic), system-ui, -apple-system, sans-serif;
     color: var(--color-text-primary);
-    background-color: var(--color-bg-alt);
+    background-color: var(--color-bg);
     scroll-behavior: smooth;
+    line-height: var(--leading-normal);
   }
+
+  /* RTL Support محسن */
+  html[dir="rtl"] {
+    font-family: var(--font-arabic), system-ui, -apple-system, sans-serif;
+    text-align: right;
+  }
+
+  html[dir="ltr"] {
+    font-family: var(--font-latin), system-ui, -apple-system, sans-serif;
+    text-align: left;
+  }
+
+  body {
+    background-color: var(--color-bg); 
+    color: var(--color-text-primary);
+    
+    /* تنعيم الخطوط - بديل لـ antialiased لضمان عدم حدوث خطأ */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
   *,
   *::before,
   *::after {
@@ -24,176 +48,225 @@
   svg,
   video {
     max-width: 100%;
+    height: auto;
     display: block;
+  }
+
+  /* Typography Scale محسن */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-bold); /* بدلاً من @apply font-bold */
+    line-height: var(--leading-tight); /* بدلاً من @apply leading-tight */
+    margin-bottom: 1rem; /* بدلاً من @apply mb-4 */
+    color: var(--color-text-primary);
+  }
+
+  /* أحجام الخطوط (هذه كلاسات Tailwind أساسية، غالباً لن تسبب مشكلة) */
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl; }
+  h2 { @apply text-3xl md:text-4xl; }
+  h3 { @apply text-2xl md:text-3xl; }
+  h4 { @apply text-xl md:text-2xl; font-weight: 600; }
+  h5 { @apply text-lg; font-weight: 600; }
+  h6 { @apply text-base; font-weight: 600; }
+
+  p {
+    @apply text-base md:text-lg;
+    line-height: var(--leading-relaxed);
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+  }
+
+  a {
+    color: var(--color-primary);
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-primary-600);
+  }
+
+  button {
+    font-family: inherit;
   }
 }
 
 /* -------------------------------------------------- */
-/* Design System Utilities                             */
+/* Design System Utilities - محدث للألوان والخطوط الجديدة */
 /* -------------------------------------------------- */
 
 @layer utilities {
-  /* ================= BACKGROUND ================= */
+  /* ================= BACKGROUND - محدث ================= */
+  .ds-bg-primary { background-color: var(--color-primary); }
+  .ds-bg-primary-200 { background-color: var(--color-primary-200); }
+  .ds-bg-primary-300 { background-color: var(--color-primary-300); }
+  .ds-bg-primary-400 { background-color: var(--color-primary-400); }
+  .ds-bg-primary-600 { background-color: var(--color-primary-600); }
+  .ds-bg-primary-900 { background-color: var(--color-primary-900); }
 
-  .ds-bg-primary {
-    background-color: var(--color-primary);
+  /* CTA برتقالي دافئ */
+  .ds-bg-cta { background-color: var(--color-cta); }
+  .ds-bg-cta-200 { background-color: var(--color-cta-200); }
+  .ds-bg-cta-300 { background-color: var(--color-cta-300); }
+  .ds-bg-cta-600 { background-color: var(--color-cta-600); }
+  .ds-bg-cta-900 { background-color: var(--color-cta-900); }
+
+  /* الخلفيات الكريمية */
+  .ds-bg { background-color: var(--color-bg); }
+  .ds-bg-alt { background-color: var(--color-bg-alt); }
+  .ds-bg-card { background-color: var(--color-bg-card); }
+  .ds-bg-section { background-color: var(--color-bg-section); }
+
+  /* ================= COLORS - محدث ================= */
+  .ds-text-primary { color: var(--color-text-primary); }
+  .ds-text-secondary { color: var(--color-text-secondary); }
+  .ds-text-muted { color: var(--color-text-muted); }
+  .ds-text-disabled { color: var(--color-text-disabled); }
+
+  /* ================= BORDERS - محدث ================= */
+  .ds-border-primary { 
+    border-color: var(--border-primary);
+    border-width: var(--border-width-1);
   }
-  .ds-bg-primary-200 {
-    background-color: var(--color-primary-200);
+  .ds-border-muted { 
+    border-color: var(--border-muted);
+    border-width: var(--border-width-1);
   }
-  .ds-bg-primary-300 {
-    background-color: var(--color-primary-300);
+  .ds-border-focus { 
+    border-color: var(--border-focus);
+    border-width: var(--border-width-2);
   }
-  .ds-bg-primary-600 {
-    background-color: var(--color-primary-600);
-  }
-  .ds-bg-primary-900 {
-    background-color: var(--color-primary-900);
-  }
-  .ds-bg-primary {
-    background-color: var(--color-primary);
-  }
-  .ds-bg {
-    background-color: var(--color-bg);
-  }
-  .ds-bg-alt {
-    background-color: var(--color-bg-alt);
-  }
-  .ds-bg-form {
-    background-color: var(--color-form);
-  }
-  /* ================= COLORS ================= */
-  .ds-text-primary {
-    color: var(--color-text-primary);
-  }
-  .ds-text-secondary {
-    color: var(--color-text-secondary);
-  }
-  .ds-text-alt {
-    color: var(--color-primary);
-  }
-  .ds-text-disabled {
-    color: var(--color-text-disabled);
-  }
-  .ds-text-main {
-    color: var(--color-primary);
-  }
-  /* ================= BORDERS ================= */
-  .ds-border-sm {
-    border-width: var(--border-width-sm);
+  .ds-border-sm { 
+    border-width: var(--border-width-1);
     border-style: solid;
-    border-color: var(--border-color);
+    border-color: var(--border-primary);
   }
-  .ds-border-md {
-    border-width: var(--border-width-md);
+  .ds-border-md { 
+    border-width: var(--border-width-2);
     border-style: solid;
-    border-color: var(--border-color);
-  }
-  /* ================= RADIUS ================= */
-  .ds-rounded-sm {
-    border-radius: var(--radius-sm);
-  }
-  .ds-rounded-md {
-    border-radius: var(--radius-md);
-  }
-  .ds-rounded-lg {
-    border-radius: var(--radius-lg);
-  }
-  .ds-rounded-xl {
-    border-radius: var(--radius-xl);
-  }
-  .ds-rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
-  .ds-rounded-3xl {
-    border-radius: var(--radius-3xl);
-  }
-  .ds-rounded-4xl {
-    border-radius: var(--radius-4xl);
-  }
-  /* ================= SHADOWS ================= */
-  .ds-shadow-sm {
-    box-shadow: var(--shadow-xs);
-  }
-  .ds-shadow-md {
-    box-shadow: var(--shadow-md);
-  }
-  .ds-shadow-lg {
-    box-shadow: var(--shadow-lg);
-  }
-  /* ================= TYPOGRAPHY ================= */
-  .ds-text-sm {
-    font-size: var(--text-sm);
-  }
-  .ds-text-base {
-    font-size: var(--text-base);
-  }
-  .ds-text-lg {
-    font-size: var(--text-lg);
-  }
-  .ds-text-xl {
-    font-size: var(--text-xl);
-  }
-  .ds-font-regular {
-    font-weight: var(--font-regular);
-  }
-  .ds-font-bold {
-    font-weight: var(--font-bold);
-  }
-  .ds-font-sans {
-    font-family: var(--font-sans);
-  }
-  .ds-font-heading {
-    font-family: var(--font-heading);
-  }
-  /* ================= SPACING ================= */
-  .ds-p-sm {
-    padding: var(--space-sm);
+    border-color: var(--border-primary);
   }
 
-  .ds-p-md {
-    padding: var(--space-md);
-  }
+  /* ================= RADIUS - محدث ================= */
+  .ds-rounded-xs { border-radius: var(--radius-xs); }
+  .ds-rounded-sm { border-radius: var(--radius-sm); }
+  .ds-rounded-md { border-radius: var(--radius-md); }
+  .ds-rounded-lg { border-radius: var(--radius-lg); }
+  .ds-rounded-xl { border-radius: var(--radius-xl); }
+  .ds-rounded-2xl { border-radius: var(--radius-2xl); }
+  .ds-rounded-full { border-radius: var(--radius-full); }
 
-  .ds-p-lg {
-    padding: var(--space-lg);
-  }
+  /* ================= SHADOWS - محدث ================= */
+  .ds-shadow-xs { box-shadow: var(--shadow-xs); }
+  .ds-shadow-sm { box-shadow: var(--shadow-sm); }
+  .ds-shadow-md { box-shadow: var(--shadow-md); }
+  .ds-shadow-lg { box-shadow: var(--shadow-lg); }
+  .ds-shadow-xl { box-shadow: var(--shadow-xl); }
+  .ds-shadow-2xl { box-shadow: var(--shadow-2xl); }
 
-  .ds-px-md {
-    padding-inline: var(--space-md);
-  }
+  /* ================= TYPOGRAPHY - محدث للخطوط العربية ================= */
+  .ds-text-xs { font-size: var(--text-xs); line-height: var(--leading-tight); }
+  .ds-text-sm { font-size: var(--text-sm); line-height: var(--leading-normal); }
+  .ds-text-base { font-size: var(--text-base); line-height: var(--leading-normal); }
+  .ds-text-lg { font-size: var(--text-lg); line-height: var(--leading-normal); }
+  .ds-text-xl { font-size: var(--text-xl); line-height: var(--leading-tight); }
+  .ds-text-2xl { font-size: var(--text-2xl); line-height: var(--leading-tight); }
+  .ds-text-3xl { font-size: var(--text-3xl); line-height: var(--leading-tight); }
+  .ds-text-4xl { font-size: var(--text-4xl); line-height: var(--leading-tight); }
+  .ds-text-5xl { font-size: var(--text-5xl); line-height: var(--leading-tight); }
+  .ds-text-6xl { font-size: var(--text-6xl); line-height: var(--leading-tight); }
 
-  .ds-py-lg {
-    padding-block: var(--space-lg);
-  }
-  /* ================= STATES ================= */
+  /* Font Weights */
+  .ds-font-light { font-weight: var(--font-light); }
+  .ds-font-normal { font-weight: var(--font-normal); }
+  .ds-font-medium { font-weight: var(--font-medium); }
+  .ds-font-semibold { font-weight: var(--font-semibold); }
+  .ds-font-bold { font-weight: var(--font-bold); }
+  .ds-font-black { font-weight: var(--font-black); }
+
+  /* Font Families */
+  .ds-font-arabic { font-family: var(--font-arabic); }
+  .ds-font-latin { font-family: var(--font-latin); }
+  .ds-font-heading { font-family: var(--font-heading); }
+
+  /* ================= SPACING - محدث ================= */
+  .ds-p-1 { padding: var(--space-1); }
+  .ds-p-2 { padding: var(--space-2); }
+  .ds-p-3 { padding: var(--space-3); }
+  .ds-p-4 { padding: var(--space-4); }
+  .ds-p-5 { padding: var(--space-5); }
+  .ds-p-6 { padding: var(--space-6); }
+  .ds-p-8 { padding: var(--space-8); }
+  .ds-p-10 { padding: var(--space-10); }
+  .ds-p-12 { padding: var(--space-12); }
+
+  .ds-px-4 { padding-inline: var(--space-4); }
+  .ds-px-6 { padding-inline: var(--space-6); }
+  .ds-px-8 { padding-inline: var(--space-8); }
+  .ds-py-4 { padding-block: var(--space-4); }
+  .ds-py-6 { padding-block: var(--space-6); }
+  .ds-py-8 { padding-block: var(--space-8); }
+  .ds-py-12 { padding-block: var(--space-12); }
+
+  .ds-mx-auto { margin-inline: auto; }
+  .ds-my-4 { margin-block: var(--space-4); }
+  .ds-my-6 { margin-block: var(--space-6); }
+  .ds-my-8 { margin-block: var(--space-8); }
+
+  /* ================= STATES - محسن ================= */
   .ds-hover {
-    transition: opacity var(--motion-fast) var(--ease-out);
+    transition: all var(--motion-normal) var(--ease-in-out);
   }
-  .ds-hover:hover {
-    opacity: var(--state-hover-opacity);
-  }
-  .ds-focus {
+  .ds-hover\:opacity-95:hover { opacity: var(--opacity-hover); }
+  .ds-hover\:shadow-md:hover { box-shadow: var(--shadow-md); }
+  .ds-hover\:shadow-lg:hover { box-shadow: var(--shadow-lg); }
+  .ds-active\:scale-95:active { transform: scale(0.95); }
+  .ds-focus-ring:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 var(--focus-ring-width) var(--focus-ring-color);
+    box-shadow: 0 0 0 3px rgb(74 112 67 / 0.2);
   }
   .ds-disabled {
     opacity: var(--opacity-disabled);
     pointer-events: none;
+    cursor: not-allowed;
   }
-}
-/* -------------------------------------------------- */
-/* Layout                                              */
-/* -------------------------------------------------- */
-.ds-container {
-  width: 100%;
-  margin-inline: auto;
-  padding-inline: 16px;
-  max-width: 1320px;
-}
 
-@media (min-width: 1024px) {
+  /* ================= LAYOUT ================= */
   .ds-container {
-    width: 92%;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 16px;
+    max-width: 1320px;
+  }
+
+  @media (min-width: 1024px) {
+    .ds-container {
+      width: 92%;
+      padding-inline: 24px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .ds-container {
+      width: 85%;
+      max-width: 1440px;
+    }
+  }
+
+  /* ================= ANIMATIONS ================= */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .ds-animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .ds-animate-slide-up {
+    animation: slideUp 0.8s ease-out;
   }
 }

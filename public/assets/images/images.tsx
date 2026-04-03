@@ -1,5 +1,6 @@
 import hero from "./heroimage.png";
 import about from "./about.svg";
-import HeroV from "./HeroV.mp4";
+import heroV from "./HeroV.mp4";
+import mainIMG from "./MainIMG.jpg";
 
-export { about, hero, HeroV };
+export { about, hero, heroV, mainIMG };

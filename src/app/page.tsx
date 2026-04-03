@@ -4,6 +4,7 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import Boxes from "@/components/molecules/Boxes";
 import Heading from "@/components/molecules/Heading";
 import Hero from "@/components/organisms/Hero";
+import Main from "@/components/organisms/Main";
 import { dataBoxes } from "@/utils/data";
 
 export default function Page() {
@@ -11,6 +12,7 @@ export default function Page() {
     <div>
       <PublicLayout>
         <Hero />
+        <Main />
       </PublicLayout> 
     </div>
   );

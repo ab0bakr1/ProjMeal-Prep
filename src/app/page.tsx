@@ -1,11 +1,9 @@
 "use client";
-import Text from "@/components/atoms/Text";
 import PublicLayout from "@/components/layout/PublicLayout";
-import Boxes from "@/components/molecules/Boxes";
-import Heading from "@/components/molecules/Heading";
 import Hero from "@/components/organisms/Hero";
 import Main from "@/components/organisms/Main";
-import { dataBoxes } from "@/utils/data";
+import Subscriptions from "@/components/organisms/Subscriptions";
+import WhyUs from "@/components/organisms/WhyUs";
 
 export default function Page() {
   return (
@@ -13,6 +11,8 @@ export default function Page() {
       <PublicLayout>
         <Hero />
         <Main />
+        <WhyUs />
+        <Subscriptions />
       </PublicLayout> 
     </div>
   );

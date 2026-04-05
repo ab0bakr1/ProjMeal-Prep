@@ -15,61 +15,44 @@
       }
     }
   },
-  "home": {
-    "boxes": {
-      "box1": {
-        "title": "أنشئ الاستبيان الخاص بك",
-        "text": "اختر قالبًا جاهزًا أو ابدأ من الصفر باستخدام أداة الإنشاء السهلة الخاصة بنا"
+  
+  "Subscriptions": {
+    "subscription": {
+      "subscription1": {
+        "title": "lorem ipsum dolor sit amet.",
+        "Features": [
+          {"Features1":  "lorem ipsum dolor sit amet."},
+          {"Features2":  "lorem ipsum dolor sit amet."},
+          {"Features3":  "lorem ipsum dolor sit amet."},
+          {"Features4":  "lorem ipsum dolor sit amet."},
+          {"Features5":  "lorem ipsum dolor sit amet."}
+      ]
       },
-      "box2": {
-        "title": "شاركه مع جمهورك",
-        "text": "أرسل الاستبيان عبر البريد الإلكتروني أو وسائل التواصل الاجتماعي أو قم بتضمينه في موقعك"
+      "subscription2": {
+        "title": "Share With Your Audience",
+        "Features": [
+          {"Features1":  "lorem ipsum dolor sit amet."},
+          {"Features2":  "lorem ipsum dolor sit amet."},
+          {"Features3":  "lorem ipsum dolor sit amet."},
+          {"Features4":  "lorem ipsum dolor sit amet."},
+          {"Features5":  "lorem ipsum dolor sit amet."},
+          {"Features6":  "lorem ipsum dolor sit amet."},
+          {"Features7":  "lorem ipsum dolor sit amet."}
+        ]
       },
-      "box3": {
-        "title": "تحليل الردود",
-        "text": "احصل على تحليلات فورية مع رسوم بيانية واضحة وتقارير قابلة للتنزيل"
-      }
-    },
-    "FAQs": {
-      "title": "ماذا يمكنني أن أفعل مع SurveyLand؟",
-      "text": "تتيح لك منصة SurveyLand إنشاء نماذج عبر الإنترنت، وجمع الردود مباشرة في بريدك الإلكتروني، وإنشاء نماذج PDF قابلة للتعبئة. يمكنك تصميم كافة أنواع النماذج، بما في ذلك:",
-      "Do": {
-        "Do1": "نماذج التسجيل",
-        "Do2": "نماذج الطلبات",
-        "Do3": "نماذج الاتصال",
-        "Do4": "نماذج تقديم الطلبات",
-        "Do5": "نماذج طلب الشراء",
-        "Do6": "نماذج التغذية الراجعة",
-        "Do7": "قوالب الاستبيانات",
-        "Do8": "نماذج الاشتراك",
-        "Do9": "نماذج التقييم",
-        "Do10": "نماذج التسجيل في الفعاليات",
-        "Do11": "نماذج الحجز",
-        "Do12": "نماذج العرائض",
-        "Do13": "نماذج التقارير",
-        "Do14": "نماذج الحجوزات المؤكدة",
-        "Do15": "نماذج التوظيف",
-        "Do16": "نماذج التتبع والمتابعة",
-        "Do17": "نماذج العضوية",
-        "Do18": "نماذج رفع الملفات",
-        "Do19": "نماذج عروض الأسعار",
-        "Do20": "نماذج المواعيد",
-        "Do21": "نماذج القبول والتسجيل",
-        "Do22": "نماذج التطوع",
-        "Do23": "نماذج الدفع الإلكتروني",
-        "Do24": "نماذج حفلات الزفاف",
-        "Do25": "نماذج الحسابات الرياضية",
-        "Do26": "نماذج المحتوى",
-        "Do27": "نماذج جلب العملاء المحتملين",
-        "Do28": "نماذج الموافقة والإقرار",
-        "Do29": "نماذج الجوائز",
-        "Do30": "نماذج الاشتراك الدوري",
-        "Do31": "نماذج التوصيات",
-        "Do32": "قوالب التصويت",
-        "Do33": "نماذج التبرعات",
-        "Do34": "نماذج تأكيد الحضور (RSVP)",
-        "Do35": "نماذج الرعاية",
-        "Do36": "نماذج ملخصات الأبحاث"
+      "subscription3": {
+        "title": "Analyze Responses",
+        "Features": [
+          {"Features1":  "lorem ipsum dolor sit amet."},
+          {"Features2":  "lorem ipsum dolor sit amet."},
+          {"Features3":  "lorem ipsum dolor sit amet."},
+          {"Features4":  "lorem ipsum dolor sit amet."},
+          {"Features5":  "lorem ipsum dolor sit amet."},
+          {"Features6":  "lorem ipsum dolor sit amet."},
+          {"Features7":  "lorem ipsum dolor sit amet."},
+          {"Features8":  "lorem ipsum dolor sit amet."},
+          {"Features9":  "lorem ipsum dolor sit amet."}
+        ]
       }
     }
   }

@@ -8,7 +8,8 @@ export function ThemeToggle() {
   const isDark = resolvedTheme === "dark";
 
   return (
-    <button
+    <>
+    {/*<button
       onClick={() => setTheme(isDark ? "light" : "dark")}
       className={`relative flex h-11 w-21 cursor-pointer items-center rounded-full p-1 transition-colors duration-500 md:h-9 md:w-18 ${
         isDark ? "bg-gray-500" : "bg-gray-200"
@@ -32,6 +33,7 @@ export function ThemeToggle() {
           <Sun className="ds-text-alt ml-0 md:ml-1" size={16} />
         )}
       </span>
-    </button>
+    </button> */}
+    </>
   );
 }

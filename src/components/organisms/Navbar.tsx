@@ -10,6 +10,7 @@ import MobileNavHeader from "../molecules/navbar/MobileNavHeader";
 import MobileNavLinks from "../molecules/navbar/MobileNavLinks";
 import Button from "../atoms/Button";
 import { ThemeToggle } from "../atoms/ThemeButton";
+import CTA from "../molecules/CTA";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -49,12 +50,7 @@ export default function Navbar() {
 
         <div className="md:flex items-center gap-2 hidden">
           <ThemeToggle />
-          <Button variant="secondary" size="md" isRounded={true}>
-            login
-          </Button>
-          <Button className="text-white" isRounded={true} size="md">
-            Sign Up
-          </Button>
+          <CTA />
         </div>
         <div className="md:hidden">
           <NavIconButton onClick={() => setOpen(true)}>

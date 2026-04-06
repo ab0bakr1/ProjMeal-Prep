@@ -6,7 +6,8 @@ import Button from '../atoms/Button'
 
 export default function Subscriptions() {
   return (
-    <section className='ds-container py-10'>
+    <section className='py-10 ds-bg-section'>
+        <div className="ds-container">
             <Title size='xl' center={true}>
                 Lorem ipsum dolor sit amet.
             </Title>
@@ -23,6 +24,7 @@ export default function Subscriptions() {
                     </div>
                 ))}
             </div>
-        </section>
+        </div>
+    </section>
   )
 }

@@ -13,47 +13,100 @@
         "title": "حلّل الردود",
         "text": "احصل على تحليلات فورية من خلال رسوم بيانية واضحة وتقارير قابلة للتنزيل"
       }
-    }
-  },
-  
-  "Subscriptions": {
-    "subscription": {
+    },
+    "Hero": {
+      "title" : "وجباتك الصحية.. جاهزة، طازجة، وعلينا.",
+      "span": "مش بعيد, مش ميل",
+      "text" : "وفّر وقتك وحافظ على صحتك مع اشتراكات 'مش ميل' المصممة لتناسب أسلوب حياتك المزدحم.",
+      "CTA": "اشترك الآن"
+    },
+    "Main": {
+      "title": "لماذا تختار مش ميل؟",
+      "sub": "نهتم بكل تفاصيل وجبتك، من المزرعة إلى مكتبك",
+      "Slogan": "طعام حقيقي.. لنتائج حقيقية",
+      "text": "نؤمن أن الأكل الصحي لا يجب أن يكون مملاً. شيفاتنا يجمعون بين القيمة الغذائية العالية والمذاق الذي لا يُقاوم، باستخدام مكونات طازجة 100% وبدون مواد حافظة.",
+      "CTA": "استكشف المنيو"
+    },
+    "WhyUs": {
+      "Card1":{
+        "title": "مكونات طازجة 100%",
+        "text": "نختار مكوناتنا بعناية يومياً من مزارعنا الشريكة، لضمان وجبة غنية بالفيتامينات والمعادن وبدون أي مواد حافظة."
+      },
+      "Card2":{
+        "title":"توصيل دقيق ومرن",
+        "text": "لا تقلق بشأن غدائك؛ نصلك أينما كنت (مكتب أو منزل) في الموعد المحدد وبأفضل تغليف يحافظ على حرارة وطعم الوجبة."
+      },
+      "Card3":{
+        "title":"باقات تناسب أهدافك",
+        "text":"سواء كنت ترغب في خسارة الوزن، بناء العضلات، أو مجرد أكل صحي متوازن، لدينا باقات مصممة خصيصاً لتلبية احتياجاتك."
+      }
+    },
+    "Subscriptions": {
+      "title": "اختر خطة وجباتك المثالية",
       "subscription1": {
-        "title": "lorem ipsum dolor sit amet.",
+        "title": "باقة الرشاقة (Lite Plan)",
         "Features": [
-          {"Features1":  "lorem ipsum dolor sit amet."},
-          {"Features2":  "lorem ipsum dolor sit amet."},
-          {"Features3":  "lorem ipsum dolor sit amet."},
-          {"Features4":  "lorem ipsum dolor sit amet."},
-          {"Features5":  "lorem ipsum dolor sit amet."}
+          {"Features1":  "وجبة غداء واحدة يومياً (5 أيام)."},
+          {"Features2":  "حساب دقيق للسعرات الحرارية."},
+          {"Features3":  "توصيل مجاني للمكتب."},
+          {"Features4":  "إمكانية الإلغاء في أي وقت."}
       ]
       },
       "subscription2": {
-        "title": "Share With Your Audience",
+        "title": "باقة المحترفين (Pro Plan)",
         "Features": [
-          {"Features1":  "lorem ipsum dolor sit amet."},
-          {"Features2":  "lorem ipsum dolor sit amet."},
-          {"Features3":  "lorem ipsum dolor sit amet."},
-          {"Features4":  "lorem ipsum dolor sit amet."},
-          {"Features5":  "lorem ipsum dolor sit amet."},
-          {"Features6":  "lorem ipsum dolor sit amet."},
-          {"Features7":  "lorem ipsum dolor sit amet."}
+          {"Features1":  "وجبتين يومياً (غداء + عشاء خفيف)."},
+          {"Features2":  "حساب دقيق للسعرات الحرارية."},
+          {"Features3":  "توصيل مجاني للمكتب."},
+          {"Features4":  "إمكانية الإلغاء في أي وقت."},
+          {"Features5":  "استشارة غذائية مجانية شهرياً."},
+          {"Features6":  "تخصيص كامل (كيتو، بروتين عالٍ)."},
+          {"Features7":  "توصيل مرن للمنزل أو العمل."}
         ]
       },
       "subscription3": {
-        "title": "Analyze Responses",
+        "title": "باقة النخبة (Elite Plan)",
         "Features": [
-          {"Features1":  "lorem ipsum dolor sit amet."},
-          {"Features2":  "lorem ipsum dolor sit amet."},
-          {"Features3":  "lorem ipsum dolor sit amet."},
-          {"Features4":  "lorem ipsum dolor sit amet."},
-          {"Features5":  "lorem ipsum dolor sit amet."},
-          {"Features6":  "lorem ipsum dolor sit amet."},
-          {"Features7":  "lorem ipsum dolor sit amet."},
-          {"Features8":  "lorem ipsum dolor sit amet."},
-          {"Features9":  "lorem ipsum dolor sit amet."}
+          {"Features1":  "3 وجبات يومياً + سناك صحي."},
+          {"Features2":  "حساب دقيق للسعرات الحرارية."},
+          {"Features3":  "توصيل مجاني للمكتب."},
+          {"Features4":  "إمكانية الإلغاء في أي وقت."},
+          {"Features5":  "استشارة غذائية مجانية شهرياً."},
+          {"Features6":  "تخصيص كامل (كيتو، بروتين عالٍ)."},
+          {"Features7":  "توصيل مرن للمنزل أو العمل."},
+          {"Features8":  "برنامج غذائي متكامل لبناء العضلات."},
+          {"Features9":  "تقارير أسبوعية لتطور الوزن والقياسات."},
+          {"Features10":  "خدمة عملاء مخصصة 24/7."}
         ]
       }
+    },
+    "Reviews": {
+      "title": "ماذا يقول عملاؤنا؟",
+      "controllar": {
+        "prev": "السابق",
+        "next": "التالي"
+      },
+      "review1": {
+        "name": "سارة الأحمد",
+        "text": "فرق كبير في طاقتي خلال العمل! الوجبات لذيذة جداً وتصل ساخنة ومغلفة بإتقان. لم أعد أشعر بالخمول بعد الغداء."
+      },
+      "review2": {
+        "name": "عمر خالد",
+        "text": "أفضل خدمة اشتراك وجبات جربتها. باقة المحترفين وفرت عليّ الكثير من الوقت والتفكير في ماذا سآكل اليوم."
+      },
+      "review3": {
+        "name": "ريم منصور",
+        "text": "الدقة في حساب السعرات الحرارية مذهلة. المكونات طازجة فعلاً والطعم منزلي بامتياز. أنصح به بشدة للرياضيين"
+      }
+    },
+    "Contact": {
+      "title": "تواصل معنا",
+      "map": "حي المروج، طريق الملك فهد، الرياض، المملكة العربية السعودية.",
+      "work": "يومياً من الساعة 8:00 صباحاً حتى 10:00 مساءً.",
+      "name": "اسمك",
+      "email": "بريدك الإلكتروني",
+      "message": "رسالتك",
+      "send": "إرسال"
     }
   }
 }

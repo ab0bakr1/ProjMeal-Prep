@@ -26,8 +26,8 @@ export default function Hero() {
       {/* المحتوى أخيراً */}
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-4 text-center text-white">
         <div className="max-w-4xl mx-auto space-y-6">
-          <Heading  />
-          <CTA />
+          <Heading title="HomePage.Hero.title" span='HomePage.Hero.span' text="HomePage.Hero.text" />
+          <CTA CTA="HomePage.Hero.CTA" />
         </div>
       </div>
     </section>

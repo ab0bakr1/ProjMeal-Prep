@@ -13,47 +13,101 @@
         "title": "Analyze Responses",
         "text": "Get instant insights with clean charts and downloadable reports"
       }
-    }
-  },
-
-  "Subscriptions": {
-    "subscription": {
+    },
+    "Hero": {
+      "title" : "Your Healthy Meals.. Ready, Fresh, and On Us.",
+      "span": "No Distance, MishMeal",
+      "text" : "Save time and stay healthy with MishMeal subscriptions designed to fit your busy lifestyle.",
+      "button": "Subscribe Now"
+    },
+    "Main": {
+      "title": "Why Choose MishMeal?",
+      "sub": "We care about every detail of your meal, from farm to office",
+      "Slogan": "Real Food.. For Real Results",
+      "text": "We believe that healthy eating shouldn't be boring. Our chefs combine high nutritional value with irresistible taste, using 100% fresh ingredients and no preservatives.",
+      "button": "Explore the Menu"
+    },
+    "WhyUs": {
+      "Card1":{
+        "title": "100% Fresh Ingredients",
+        "text": "We carefully select our ingredients daily from our partner farms, ensuring a meal rich in vitamins and minerals with no preservatives."
+      },
+      "Card2":{
+        "title":"Precise and Flexible Delivery",
+        "text": "Don't worry about your meals; we'll deliver them wherever you are (office or home) at the specified time with the best packaging to maintain temperature and taste."
+      },
+      "Card3":{
+        "title":"Bundles Tailored to Your Goals",
+        "text":"Whether you want to lose weight, build muscle, or simply eat a healthy, balanced diet, we have specially designed bundles to meet your needs."
+      }
+    },
+    "Subscriptions": {
+      "title": "Choose Your Perfect Meal Plan",
       "subscription1": {
-        "title": "lorem ipsum dolor sit amet.",
+        "title": "Slimming Bundle (Lite Plan)",
         "Features": [
-          {"Features1":  "lorem ipsum dolor sit amet."},
-          {"Features2":  "lorem ipsum dolor sit amet."},
-          {"Features3":  "lorem ipsum dolor sit amet."},
-          {"Features4":  "lorem ipsum dolor sit amet."},
-          {"Features5":  "lorem ipsum dolor sit amet."}
-      ]
+          {"Features1":  "One lunch meal per day (5 days)."},
+          {"Features2":  "Precise calorie tracking."},
+          {"Features3":  "Free delivery to your office."},
+          {"Features4":  "Option to cancel at any time."}
+        ]
       },
       "subscription2": {
-        "title": "Share With Your Audience",
+        "title": "Professionals Bundle (Pro Plan)",
         "Features": [
-          {"Features1":  "lorem ipsum dolor sit amet."},
-          {"Features2":  "lorem ipsum dolor sit amet."},
-          {"Features3":  "lorem ipsum dolor sit amet."},
-          {"Features4":  "lorem ipsum dolor sit amet."},
-          {"Features5":  "lorem ipsum dolor sit amet."},
-          {"Features6":  "lorem ipsum dolor sit amet."},
-          {"Features7":  "lorem ipsum dolor sit amet."}
+          {"Features1":  "Two meals per day (lunch + light dinner)."},
+          {"Features2":  "Precise calorie tracking."},
+          {"Features3":  "Free delivery to your office."},
+          {"Features4":  "Option to cancel at any time."},
+          {"Features5":  "Free monthly nutritional consultation."},
+          {"Features6":  "Complete customization (Keto, High Protein)."},
+          {"Features7":  "Flexible delivery to home or office."}
         ]
       },
       "subscription3": {
-        "title": "Analyze Responses",
+        "title": "Elite Bundle (Elite Plan)",
         "Features": [
-          {"Features1":  "lorem ipsum dolor sit amet."},
-          {"Features2":  "lorem ipsum dolor sit amet."},
-          {"Features3":  "lorem ipsum dolor sit amet."},
-          {"Features4":  "lorem ipsum dolor sit amet."},
-          {"Features5":  "lorem ipsum dolor sit amet."},
-          {"Features6":  "lorem ipsum dolor sit amet."},
-          {"Features7":  "lorem ipsum dolor sit amet."},
-          {"Features8":  "lorem ipsum dolor sit amet."},
-          {"Features9":  "lorem ipsum dolor sit amet."}
+          {"Features1":  "Three meals per day + healthy snack."},
+          {"Features2":  "Precise calorie tracking."},
+          {"Features3":  "Free delivery to your office."},
+          {"Features4":  "Option to cancel at any time."},
+          {"Features5":  "Free monthly nutritional consultation."},
+          {"Features6":  "Complete customization (Keto, High Protein)."},
+          {"Features7":  "Flexible delivery to home or office."},
+          {"Features8":  "Comprehensive nutrition program for muscle building."},
+          {"Features9":  "Weekly reports on weight progression and measurements."},
+          {"Features10":  "Dedicated customer service available 24/7."}
         ]
       }
+    },
+    "Reviews": {
+      "title": "What Our Customers Are Saying",
+      "controllar": {
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "review1": {
+        "name": "Sarah Al-Ahmad",
+        "text": "A huge difference in my energy during work! The meals are very delicious and arrive hot and perfectly packaged. I no longer feel lethargic after lunch."
+      },
+      "review2": {
+        "name": "Omar Khalid",
+        "text": "The best meal subscription service I've tried. The Professionals Package has saved me so much time and the hassle of thinking about what to eat today."
+      },
+      "review3": {
+        "name": "Reem Mansour",
+        "text": "The accuracy in calorie counting is amazing. The ingredients are truly fresh and the taste is excellently home-cooked. I highly recommend it for athletes."
+      }
+    },
+    "Contact": {
+      "title": "Contact Us",
+      "map": "Al Morouj District, King Fahd Road, Riyadh, Saudi Arabia.",
+      "work": "Daily from 8:00 AM to 10:00 PM.",
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message"
     }
+
   }
 }

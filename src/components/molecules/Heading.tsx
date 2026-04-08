@@ -1,8 +1,15 @@
 import Title from "../atoms/Title";
 import Text from "../atoms/Text";
+import { useTranslations } from "next-intl";
 
+interface props {
+  title: string;
+  span: string;
+  text: string;
+}
 
-export default function Heading() {
+export default function Heading({ title, span, text }: props) {
+  const t = useTranslations();
   return (
     <div className="">
 
@@ -12,15 +19,16 @@ export default function Heading() {
           size="xl"
           className=" ds-font-bold"
           center={true}>
-          Lorem, ipsum dolor.
-        </Title>
+          {t(title)}
+        </Title> 
+        
         <Title variant="disabled" size="xl" className=" ds-font-bold">
-          Lorem, ipsum.
+          {t(span)}
         </Title>
       </div>
 
       <Text variant="secondary" size="md" center={true}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi.
+        {t(text)}
       </Text>
     </div>
   );

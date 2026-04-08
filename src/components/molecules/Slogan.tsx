@@ -1,11 +1,17 @@
 import React from 'react'
 import Title from '../atoms/Title'
+import { useTranslations } from 'next-intl';
 
-export default function Slogan() {
+interface SloganProps {
+  slogentext: string;
+}
+
+export default function Slogan({ slogentext }: SloganProps) {
+  const t = useTranslations();
   return (
     <div>
       <Title variant="primary" size="lg" center={true}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        {t(slogentext)}
       </Title>
     </div>
   )

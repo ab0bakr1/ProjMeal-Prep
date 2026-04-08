@@ -50,7 +50,7 @@ export default function Navbar() {
 
         <div className="md:flex items-center gap-2 hidden">
           <ThemeToggle />
-          <CTA />
+          <CTA CTA="HomePage.Hero.CTA"/>
         </div>
         <div className="md:hidden">
           <NavIconButton onClick={() => setOpen(true)}>

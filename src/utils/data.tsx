@@ -3,64 +3,83 @@ export const dataBox = [
   {
     id: 1,
     icon: ListMinus,
-    title: "HomePage.boxes.box1.title",
-    text: "HomePage.boxes.box1.text",
+    title: "HomePage.WhyUs.Card1.title",
+    text: "HomePage.WhyUs.Card1.text",
   },
   {
     id: 2,
     icon: Sun,
-    title: "HomePage.boxes.box2.title",
-    text: "HomePage.boxes.box2.text",
+    title: "HomePage.WhyUs.Card2.title",
+    text: "HomePage.WhyUs.Card2.text",
   },
   {
     id: 3,
     icon: ChevronRight,
-    title: "HomePage.boxes.box3.title",
-    text: "HomePage.boxes.box3.text",
+    title: "HomePage.WhyUs.Card3.title",
+    text: "HomePage.WhyUs.Card3.text",
   },
 ];
 
 export const dataSubscriptions = [
   {
     id: 1,
-    title: "Subscriptions.subscription.subscription1.title",
+    title: "HomePage.Subscriptions.subscription1.title",
     price: 1200,
     Features : [
-      {Features1: "Subscriptions.subscription.subscription1.Features1"},
-      {Features1: "Subscriptions.subscription.subscription1.Features2"},
-      {Features1: "Subscriptions.subscription.subscription1.Features3"},
-      {Features1: "Subscriptions.subscription.subscription1.Features4"},
-      {Features1: "Subscriptions.subscription.subscription1.Features5"},
+      {key: "HomePage.Subscriptions.subscription1.Features.0.Features1"},
+      {key: "HomePage.Subscriptions.subscription1.Features.1.Features2"},
+      {key: "HomePage.Subscriptions.subscription1.Features.2.Features3"},
+      {key: "HomePage.Subscriptions.subscription1.Features.3.Features4"},
     ]
   },
   {
     id: 2,
-    title: "Subscriptions.subscription.subscription1.title",
+    title: "HomePage.Subscriptions.subscription2.title",
     price: 1600,
     Features : [
-      {Features1: "Subscriptions.subscription.subscription1.Features1"},
-      {Features1: "Subscriptions.subscription.subscription1.Features2"},
-      {Features1: "Subscriptions.subscription.subscription1.Features3"},
-      {Features1: "Subscriptions.subscription.subscription1.Features4"},
-      {Features1: "Subscriptions.subscription.subscription1.Features5"},
-      {Features1: "Subscriptions.subscription.subscription1.Features6"},
-      {Features1: "Subscriptions.subscription.subscription1.Features7"},
+      {key: "HomePage.Subscriptions.subscription2.Features.0.Features1"},
+      {key: "HomePage.Subscriptions.subscription2.Features.1.Features2"},
+      {key: "HomePage.Subscriptions.subscription2.Features.2.Features3"},
+      {key: "HomePage.Subscriptions.subscription2.Features.3.Features4"},
+      {key: "HomePage.Subscriptions.subscription2.Features.4.Features5"},
+      {key: "HomePage.Subscriptions.subscription2.Features.5.Features6"},
+      {key: "HomePage.Subscriptions.subscription2.Features.6.Features7"},
     ]
   },
   {
     id: 3,
-    title: "Subscriptions.subscription.subscription1.title",
+    title: "HomePage.Subscriptions.subscription3.title",
     price: 2000,
     Features : [
-      {Features1: "Subscriptions.subscription.subscription1.Features1"},
-      {Features1: "Subscriptions.subscription.subscription1.Features2"},
-      {Features1: "Subscriptions.subscription.subscription1.Features3"},
-      {Features1: "Subscriptions.subscription.subscription1.Features4"},
-      {Features1: "Subscriptions.subscription.subscription1.Features5"},
-      {Features1: "Subscriptions.subscription.subscription1.Features6"},
-      {Features1: "Subscriptions.subscription.subscription1.Features7"},
-      {Features1: "Subscriptions.subscription.subscription1.Features8"},
-      {Features1: "Subscriptions.subscription.subscription1.Features9"},
+      {key: "HomePage.Subscriptions.subscription3.Features.0.Features1"},
+      {key: "HomePage.Subscriptions.subscription3.Features.1.Features2"},
+      {key: "HomePage.Subscriptions.subscription3.Features.2.Features3"},
+      {key: "HomePage.Subscriptions.subscription3.Features.3.Features4"},
+      {key: "HomePage.Subscriptions.subscription3.Features.4.Features5"},
+      {key: "HomePage.Subscriptions.subscription3.Features.5.Features6"},
+      {key: "HomePage.Subscriptions.subscription3.Features.6.Features7"},
+      {key: "HomePage.Subscriptions.subscription3.Features.7.Features8"},
+      {key: "HomePage.Subscriptions.subscription3.Features.8.Features9"},
     ]
   }
+];
+export const dataReviews = [
+  {
+    id: 1,
+    name: "HomePage.Reviews.review1.name",
+    rating: 5,
+    comment: "HomePage.Reviews.review1.text",
+  },
+  {
+    id: 2,
+    name: "HomePage.Reviews.review2.name",
+    rating: 5,
+    comment: "HomePage.Reviews.review2.text",
+  },
+  {
+    id: 3,
+    name: "HomePage.Reviews.review3.name",
+    rating: 4,
+    comment: "HomePage.Reviews.review3.text",
+  },
 ];

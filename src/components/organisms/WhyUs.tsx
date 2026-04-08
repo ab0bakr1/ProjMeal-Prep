@@ -1,21 +1,22 @@
 import React from 'react'
-import Title from '../atoms/Title'
 import { dataBox } from '@/utils/data'
-import { useTranslations } from 'next-intl'
+import Box from '../molecules/Box'
 
 export default function WhyUs() {
-    const t = useTranslations()
   return (
-    <section className='ds-container py-10'>
-        <div className='grid md:grid-cols-3 grid-cols-1 justify-between mt-10 gap-5'>
-            {dataBox.map((box) => (
-                <div key={box.id} className='text-center p-5 rounded-lg ds-bg-card ds-shadow-md'>
-                    <box.icon className='m-auto' />
-                    <Title className='mt-5'>{t(box.title)}</Title>
-                    <p>{t(box.text)}</p>
-                </div>
-            ))}
-        </div>
+    <section className='ds-container ds-py-12'>
+      {/* استخدام CSS Grid مع فجوات مدروسة من النظام الخاص بك */}
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+        {dataBox.map((item) => (
+          <div key={item.id} className="ds-animate-fade-in">
+            <Box 
+              title={item.title} 
+              text={item.text} 
+              Icon={item.icon} 
+            />
+          </div>
+        ))}
+      </div>
     </section>
   )
 }

@@ -4,29 +4,42 @@ import Button from '../atoms/Button'
 import { useTranslations } from 'next-intl'
 import Title from '../atoms/Title';
 import { dataReviews } from '@/utils/data';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Reviews() {
     const t = useTranslations();
   return (
-    <section>
+    <section className="ds-py-16">
         <div className="ds-container">
-            <div className="flex justify-between items-center">
-                <Title>
-                    {t('HomePage.Reviews.title')}
-                </Title>
-                <div className="flex space-x-2">
-                    <Button variant="secondary" size="md">
-                        {t('HomePage.Reviews.controllar.next')}
+            {/* رأس القسم مع الأزرار */}
+            <div className="flex justify-between items-end mb-8 border-b pb-6">
+                <div>
+                    <Title className="ds-text-3xl ds-font-heading ds-font-bold m-0">
+                        {t('HomePage.Reviews.title')}
+                    </Title>
+                </div>
+                
+                {/* أزرار التحكم - جاهزة لربطها بـ Swiper لاحقاً */}
+                <div className="flex gap-3">
+                    <Button variant="secondary" className="ds-rounded-full w-10 h-10 p-0 flex items-center justify-center">
+                        <ChevronRight size={20} />
                     </Button>
-                    <Button variant="secondary" size="md">
-                        {t('HomePage.Reviews.controllar.prev')}
+                    <Button variant="secondary" className="ds-rounded-full w-10 h-10 p-0 flex items-center justify-center">
+                        <ChevronLeft size={20} />
                     </Button>
                 </div>
             </div>
-            <hr />
-            <div className="mt-8">
+
+            {/* عرض الآراء - شبكة مرنة */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {dataReviews.map((review, index) => (
-                    <Review key={index} name={review.name} rating={review.rating} comment={review.comment} />
+                    <div key={index} className="ds-animate-fade-in">
+                        <Review 
+                            name={review.name} 
+                            rating={review.rating} 
+                            comment={review.comment} 
+                        />
+                    </div>
                 ))}
             </div>
         </div>

@@ -8,9 +8,9 @@ import NavIconButton from "../atoms/navbar/NavIconButton";
 import DesktopNavLinks from "../molecules/navbar/DesktopNavLinks";
 import MobileNavHeader from "../molecules/navbar/MobileNavHeader";
 import MobileNavLinks from "../molecules/navbar/MobileNavLinks";
-import Button from "../atoms/Button";
 import { ThemeToggle } from "../atoms/ThemeButton";
 import CTA from "../molecules/CTA";
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Navbar() {
   const dropdownRoutes = Routes.filter((r) => r.id > 5);
 
   useEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 50);
+    const onScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -32,12 +32,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className={
-        (cn("fixed top-0 z-50 h-20 ds-container transition-all duration-300 "),
-        isScrolled ? "ds-bg  shadow-md" : "ds-bg shadow-sm")
-      }
+      className={cn(
+        "fixed top-0 z-50 w-full transition-all duration-300",
+        isScrolled ? "ds-bg-card ds-shadow-md h-16" : "bg-transparent h-20"
+      )}
     >
-      <div className="mx-auto flex items-center justify-between py-2 sm:px-10 md:px-0 md:py-4 ds-container">
+      <div className="ds-container h-full flex items-center justify-between">
         <NavLogo />
 
         <DesktopNavLinks
@@ -48,22 +48,24 @@ export default function Navbar() {
           closeNavbar={closeNavbar}
         />
 
-        <div className="md:flex items-center gap-2 hidden">
+        <div className="hidden md:flex items-center gap-4">
           <ThemeToggle />
-          <CTA CTA="HomePage.Hero.CTA"/>
+          <CTA CTA="HomePage.Hero.CTA" />
         </div>
-        <div className="md:hidden">
+
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
           <NavIconButton onClick={() => setOpen(true)}>
-            <ListMinus size={30} />
+            <ListMinus size={24} className="ds-text-primary" />
           </NavIconButton>
         </div>
       </div>
 
-      {/* Mobile */}
+      {/* Mobile Drawer */}
       <div
         className={cn(
-          "ds-bg fixed top-0 right-0 z-40 h-screen w-full transition-transform duration-300 md:hidden",
-          open ? "translate-x-0" : "translate-x-full",
+          "ds-bg fixed top-0 right-0 z-[60] h-screen w-full transition-transform duration-500 md:hidden",
+          open ? "translate-x-0" : "translate-x-full"
         )}
       >
         <MobileNavHeader onClose={closeNavbar} />

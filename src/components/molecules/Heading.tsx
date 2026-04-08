@@ -22,7 +22,7 @@ export default function Heading({ title, span, text }: props) {
           {t(title)}
         </Title> 
         
-        <Title variant="disabled" size="xl" className=" ds-font-bold">
+        <Title variant="span" size="xl" className=" ds-font-bold">
           {t(span)}
         </Title>
       </div>

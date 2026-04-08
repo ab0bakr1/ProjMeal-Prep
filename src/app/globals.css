@@ -122,6 +122,7 @@
   .ds-text-secondary { color: var(--color-text-secondary); }
   .ds-text-muted { color: var(--color-text-muted); }
   .ds-text-disabled { color: var(--color-text-disabled); }
+  .ds-text-span { color: var(--color-text-span); }
 
   /* ================= BORDERS - محدث ================= */
   .ds-border-primary { 

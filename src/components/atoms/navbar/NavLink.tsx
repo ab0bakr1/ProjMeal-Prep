@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cn } from "@/lib/cn";
 
 interface Props {
   to: string;
@@ -7,17 +8,15 @@ interface Props {
   className?: string;
 }
 
-export default function NavLink({
-  to,
-  children,
-  onClick,
-  className = "",
-}: Props) {
+export default function NavLink({ to, children, onClick, className = "" }: Props) {
   return (
     <Link
       href={to}
       onClick={onClick}
-      className={`active:text-primary focus:text-primary transition-colors ${className}`}
+      className={cn(
+        "ds-text-secondary ds-font-medium ds-hover hover:ds-text-primary relative py-2 block",
+        className
+      )}
     >
       {children}
     </Link>

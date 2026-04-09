@@ -37,6 +37,8 @@ export default function Hero() {
               title="HomePage.Hero.title" 
               span="HomePage.Hero.span" 
               text="HomePage.Hero.text"
+              colorTitle="secondary" // تمرير لون البراند لاستخدامه في العنوان
+              colorText="disabled" // تمرير لون ثانوي للنص
               // تأكد أن مكون Heading يستخدم ds-text-6xl للعناوين الكبيرة
             />
           </div>

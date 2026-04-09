@@ -14,7 +14,7 @@ export default function Main() {
       <div className="ds-container">
         {/* العنوان الرئيسي للقسم */}
         <div className="mb-12">
-          <Heading title="HomePage.Main.title" span="" text="HomePage.Main.sub" />
+          <Heading title="HomePage.Main.title" span="" text="HomePage.Main.sub" colorTitle="primary" colorText="muted" />
         </div>
 
         <div className="flex flex-col lg:flex-row justify-between items-stretch gap-12">
@@ -31,7 +31,7 @@ export default function Main() {
           {/* محتوى النص */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-start gap-8">
             <div className="ds-p-6 ds-bg-card ds-rounded-xl ds-shadow-sm ds-border-muted border">
-              <Text variant="secondary" className="ds-text-lg ds-font-medium leading-relaxed">
+              <Text variant="primary" className="ds-text-lg ds-font-medium leading-relaxed">
                 {t("HomePage.Main.text")}
               </Text>
             </div>

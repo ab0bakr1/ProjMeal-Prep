@@ -13,7 +13,7 @@ export default function Slogan({ slogentext }: SloganProps) {
     <div className="flex items-center justify-center">
       {/* استخدام لون Primary وخط Heading (Tajawal) كما في ملفاتك */}
       <Title 
-        variant="primary" 
+        variant="black" 
         className="ds-font-heading ds-font-bold ds-text-2xl md:ds-text-3xl ds-text-primary italic"
         center={true}
       >

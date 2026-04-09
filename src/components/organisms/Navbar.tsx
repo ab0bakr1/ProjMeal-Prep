@@ -34,11 +34,11 @@ export default function Navbar() {
     <nav
       className={cn(
         "fixed top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "ds-bg-card ds-shadow-md h-16" : "bg-transparent h-20"
+        isScrolled ? "ds-bg-primary-900 ds-shadow-md h-16" : "bg-transparent h-20"
       )}
     >
       <div className="ds-container h-full flex items-center justify-between">
-        <NavLogo />
+        <NavLogo color="secondary"/>
 
         <DesktopNavLinks
           mainRoutes={mainRoutes}

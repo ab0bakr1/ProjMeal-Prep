@@ -6,16 +6,18 @@ interface props {
   title: string;
   span: string;
   text: string;
+  colorTitle: string;
+  colorText: string;
 }
 
-export default function Heading({ title, span, text }: props) {
+export default function Heading({ title, span, text, colorTitle , colorText }: props) {
   const t = useTranslations();
   return (
     <div className="">
 
       <div className="flex items-center justify-center  gap-1">
         <Title
-          variant="disabled"
+          variant={colorTitle}
           size="xl"
           className=" ds-font-bold"
           center={true}>
@@ -27,7 +29,7 @@ export default function Heading({ title, span, text }: props) {
         </Title>
       </div>
 
-      <Text variant="secondary" size="md" center={true}>
+      <Text variant={colorText} size="md" center={true}>
         {t(text)}
       </Text>
     </div>

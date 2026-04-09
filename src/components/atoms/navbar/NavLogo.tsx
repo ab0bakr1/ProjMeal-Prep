@@ -6,9 +6,10 @@ import { cn } from "@/lib/cn";
 
 interface Props {
   size?: "sm" | "lg";
+  color?: "primary" | "secondary" | string;
 }
 
-export default function NavLogo({ size = "sm" }: Props) {
+export default function NavLogo({ size = "sm", color = "primary" }: Props) {
   return (
     <Link
       href="/"
@@ -17,7 +18,7 @@ export default function NavLogo({ size = "sm" }: Props) {
       <Images src={Logo} alt="MishMeal Logo" width={size === "lg" ? 50 : 40} height={size === "lg" ? 50 : 40} />
       <Title 
         className={cn("m-0 ds-font-heading ds-font-bold", size === "lg" ? "ds-text-2xl" : "ds-text-xl")} 
-        variant="primary"
+        variant={color === "secondary" ? "secondary" : "gray"}
       >
         MishMeal
       </Title>

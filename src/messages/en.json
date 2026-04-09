@@ -1,5 +1,11 @@
 {
   "HomePage": {
+    "Nav": {
+      "home": "Home",
+      "menu": "Menu",
+      "about": "About Us",
+      "contact": "Contact Us"
+    },
     "boxes": {
       "box1": {
         "title": "Create Your Survey",
@@ -107,6 +113,15 @@
       "email": "Your Email",
       "message": "Your Message",
       "send": "Send Message"
+    },
+    "Footer": {
+      "text": "We provide you with complete healthy meals designed to fit your lifestyle, with high quality and fresh ingredients daily.",
+      "Links": "Quick Links",
+      "Contact": "Contact Information",
+      "Newsletter": "Subscribe to Our Newsletter",
+      "NewsletterText": "Subscribe for health tips and exclusive offers.",
+      "NewsletterButton": "Subscribe",
+      "Copyright": "© 2026 MishMeal. All rights reserved."
     }
 
   }

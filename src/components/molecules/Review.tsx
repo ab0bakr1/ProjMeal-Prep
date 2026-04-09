@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import React from 'react';
 import { Star } from 'lucide-react'; // استخدام أيقونات بدلاً من الإيموجي لشكل أرقى
 import { cn } from '@/lib/cn';
+import Text from '../atoms/Text';
 
 interface ReviewProps {
     name: string;
@@ -32,9 +33,9 @@ export default function Review({ name, rating, comment }: ReviewProps) {
                 </div>
             </div>
         </div>
-        <p className="ds-text-text-secondary leading-relaxed ds-text-md italic flex-grow">
+        <Text variant='muted' className="ds-text-text-secondary leading-relaxed ds-text-md italic flex-grow">
             " {t(comment)} "
-        </p>
+        </Text>
     </div>
   )
 }

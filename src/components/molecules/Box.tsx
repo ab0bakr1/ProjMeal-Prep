@@ -38,7 +38,7 @@ export default function Box({ title, text, Icon }: BoxProps) {
 
       {/* استخدام لون النص الثانوي المريح للعين */}
       <Text 
-        variant="secondary" 
+        variant="muted" 
         className="ds-text-base leading-relaxed" 
         center={true}
       >

@@ -58,7 +58,7 @@ export default function Subscriptions() {
                       <div className="flex-shrink-0 w-5 h-5 ds-bg-primary-300 ds-rounded-full flex items-center justify-center">
                         <Check className="w-3 h-3 ds-text-primary" strokeWidth={3} />
                       </div>
-                      <Text variant="secondary" size="md" className="ds-font-medium">
+                      <Text variant="muted" size="md" className="ds-font-medium">
                         {t(Feat.key)}
                       </Text>
                     </div>

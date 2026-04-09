@@ -3,7 +3,7 @@ interface Props {
   children?: React.ReactNode;
   size?: "sm" | "md" | "lg";
   center?: boolean;
-  variant?: "primary" | "disabled"|"secondary";
+  variant?: "primary" | "disabled"|"secondary" | string;
   className?: string;
 }
 
@@ -23,6 +23,7 @@ export default function Text({
     primary: "ds-text-primary",
     disabled: "ds-text-disabled",
     secondary:"ds-text-secondary",
+    [variant]: `ds-text-${variant}`,
   };
 
   return (

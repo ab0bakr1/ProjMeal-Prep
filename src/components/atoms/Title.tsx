@@ -2,7 +2,7 @@ import { cn } from "@/lib/cn";
 interface Props {
   children: React.ReactNode;
   size?: "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
-  variant?: "black" | "gray" | "primary" | "disabled" | "span";
+  variant?: "black" | "gray" | "primary" | "disabled" | "span" | string;
   center?: boolean;
   className?: string;
 }
@@ -27,6 +27,7 @@ export default function Title({
     primary: "ds-text-alt",
     disabled: "ds-text-disabled",
     span: "ds-text-span",
+    [variant]: `ds-text-${variant}`,
   };
   return (
     <>

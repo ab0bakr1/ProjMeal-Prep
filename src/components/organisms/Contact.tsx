@@ -2,6 +2,7 @@ import React from 'react'
 import Title from '../atoms/Title'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/cn'
+import Text from '../atoms/Text'
 
 export default function Contact() {
     const t = useTranslations()
@@ -21,14 +22,14 @@ export default function Contact() {
                         MishMeal
                     </Title>
                     <div className="ds-space-y-4 ds-text-text-secondary">
-                        <p className="flex items-center gap-2">
+                        <Text variant='muted' className="flex items-center gap-2">
                             <span className="ds-font-bold text-primary"></span> hello@mishmeal.com
-                        </p>
-                        <p className="flex items-center gap-2">
+                        </Text>
+                        <Text variant='muted' className="flex items-center gap-2">
                             <span className="ds-font-bold text-primary"></span> +966 50 123 4567
-                        </p>
-                        <p className="ds-pt-2">{t('HomePage.Contact.map')}</p>
-                        <p>{t('HomePage.Contact.work')}</p>
+                        </Text>
+                        <Text variant='muted' className="ds-pt-2">{t('HomePage.Contact.map')}</Text>
+                        <Text variant='muted'>{t('HomePage.Contact.work')}</Text>
                     </div>
                 </div>
 

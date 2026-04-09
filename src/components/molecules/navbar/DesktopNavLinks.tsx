@@ -1,5 +1,6 @@
 import NavLink from "@/components/atoms/navbar/NavLink";
 import { cn } from "@/lib/cn";
+import { useTranslations } from "next-intl";
 
 export interface NavRoute {
   id: number;
@@ -14,11 +15,12 @@ interface DesktopNavLinksProps {
   closeNavbar: () => void;
 }
 export default function DesktopNavLinks({ mainRoutes }: DesktopNavLinksProps) {
+  const t = useTranslations();
   return (
     <ul className="text-light hidden items-center gap-6 text-base font-medium md:flex">
       {mainRoutes.map((item) => (
         <li key={item.id} className={cn("ds-text-secondary")}>
-          <NavLink to={item.path}>{item.key}</NavLink>
+          <NavLink to={item.path}>{t(item.key)}</NavLink>
         </li>
       ))}
     </ul>

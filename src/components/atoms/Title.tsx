@@ -14,12 +14,12 @@ export default function Title({
   className = "p-0 capitalize font-semibold",
 }: Props) {
   const sizes = {
-    sm: "text-base",
-    md: "text-2xl",
-    lg: "text-3xl",
-    xl: "text-4xl",
-    xxl: "text-5xl",
-    xxxl: "text-6xl",
+    sm: "text-sm md:text-base",
+    md: "text-lg md:text-2xl",
+    lg: "text-xl md:text-3xl",
+    xl: "text-2xl md:text-4xl",      // هنا سيصبح الـ xl أصغر في الموبايل
+    xxl: "text-3xl md:text-5xl",
+    xxxl: "text-4xl md:text-6xl",
   };
   const variants = {
     black: "ds-text-primary",
